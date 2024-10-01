@@ -1,0 +1,24 @@
+
+### Get Account
+
+GET http://localhost:8080/account/2
+accept: application/json
+
+### Create Account
+
+POST http://localhost:8080/account
+content-type: application/json
+
+{
+  "amount": 1000
+}
+
+### Deposit account
+
+PUT http://localhost:8080/account/2/deposit
+content-type: application/json
+
+{
+  "accountId": 1,
+  "amount": 55
+}

@@ -1,0 +1,12 @@
+[versions]
+kotlin = "2.0.20"
+junit-jupiter = "5.10.3"
+quarkus = "3.15.1"
+
+[libraries]
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-plugin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+io-quarkus = { id = "io.quarkus", version.ref = "quarkus" }
